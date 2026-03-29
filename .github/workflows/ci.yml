@@ -61,4 +61,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
       - name: Build
-        run: set -o pipefail && xcodebuild -scheme SwiftkubeClient -destination "${{ matrix.destination }}" clean build | xcpretty
+        run: set -o pipefail && xcodebuild -scheme SwiftkubeModel -destination "${{ matrix.destination }}" clean build | xcpretty
